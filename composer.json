@@ -17,7 +17,9 @@
         "sensio/framework-extra-bundle": "2.1.*",
         "sensio/generator-bundle": "2.1.*",
         "jms/security-extra-bundle": "1.2.*",
-        "jms/di-extra-bundle": "1.1.*"
+        "jms/di-extra-bundle": "1.1.*",
+		"twitter/bootstrap": "v2.1.0",
+		"leafo/lessphp": "dev-master"
     },
     "scripts": {
         "post-install-cmd": [
@@ -37,5 +39,19 @@
     "extra": {
         "symfony-app-dir": "app",
         "symfony-web-dir": "web"
-    }
+    },
+	"repositories": [
+		{
+			"type": "package",
+			"package": {
+				"name": "twitter/bootstrap",
+				"version": "2.1.0",
+				"source": {
+					"type": "git",
+					"url": "https://github.com/twitter/bootstrap",
+					"reference": "v2.1.0"
+				}
+			}
+		}
+	]
 }
